@@ -1,0 +1,98 @@
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #f0f0f0; min-height: 100vh; padding: 24px 16px 60px; }
+  h1 { font-size: 22px; font-weight: 700; letter-spacing: .02em; margin-bottom: 4px; }
+  .subtitle { font-size: 13px; color: #888; margin-bottom: 20px; }
+
+  /* SECTION TOGGLE */
+  .section-toggle { display: flex; gap: 6px; margin-bottom: 24px; }
+  .stab { padding: 10px 20px; border-radius: 10px; border: 1px solid #333; background: transparent; cursor: pointer; font-size: 14px; font-weight: 600; color: #888; }
+  .stab.active { background: #1e1e1e; color: #f0f0f0; border-color: #555; }
+  .section { display: none; }
+  .section.active { display: block; }
+
+  /* STATS */
+  .stats-bar { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+  .stat { background: #1a1a1a; border: 1px solid #262626; border-radius: 8px; padding: 8px 14px; font-size: 12px; color: #666; }
+  .stat span { color: #f0f0f0; font-weight: 600; }
+
+  /* SCHEDULE */
+  .schedule-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  .day-pill { padding: 6px 13px; border-radius: 20px; font-size: 12px; font-weight: 500; border: 1px solid #333; }
+  .day-active { background: #0d3326; color: #4ecb8d; border-color: #1a6645; }
+  .day-rest { background: #1a1a1a; color: #555; }
+
+  /* GYM TABS */
+  .tabs { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+  .tab { padding: 9px 16px; border-radius: 10px; border: 1px solid #333; background: transparent; cursor: pointer; font-size: 13px; font-weight: 600; color: #888; }
+  .tab.active { background: #1e1e1e; color: #f0f0f0; border-color: #555; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* ROWS */
+  .row-head { display: grid; grid-template-columns: 1fr 52px 64px 72px; gap: 6px; padding: 4px 12px; font-size: 11px; color: #555; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 4px; }
+  .row { display: grid; grid-template-columns: 1fr 52px 64px 72px; gap: 6px; align-items: center; padding: 11px 12px; border-radius: 10px; margin-bottom: 3px; font-size: 13px; background: #1a1a1a; border: 1px solid #262626; }
+  .machine-name { font-weight: 500; color: #f0f0f0; display: flex; align-items: center; gap: 7px; }
+  .num { text-align: center; color: #ccc; }
+  .cardio-row { display: flex; align-items: center; gap: 8px; padding: 7px 12px; margin-bottom: 6px; border-radius: 8px; background: #141414; font-size: 12px; color: #666; border-left: 2px solid #2a2a2a; }
+  .badge { font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; flex-shrink: 0; }
+  .b-db { background: #1e1a3a; color: #a89cf0; }
+  .b-machine { background: #0d2e1f; color: #4ecb8d; }
+  .b-cardio { background: #2a1e08; color: #d4943a; }
+  .sec-label { font-size: 10px; font-weight: 700; color: #444; margin: 14px 0 5px 4px; text-transform: uppercase; letter-spacing: .08em; }
+  .note { font-size: 12px; color: #444; margin-top: 16px; padding-top: 14px; border-top: 1px solid #222; line-height: 1.6; }
+
+  /* MEAL PLAN */
+  .meal-card { background: #1a1a1a; border: 1px solid #262626; border-radius: 12px; padding: 14px 16px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 14px; }
+  .meal-time { font-size: 12px; font-weight: 600; color: #555; min-width: 56px; padding-top: 2px; }
+  .meal-label { font-size: 13px; font-weight: 600; color: #f0f0f0; margin-bottom: 7px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pill { font-size: 12px; padding: 3px 10px; border-radius: 20px; font-weight: 500; }
+  .p-rice { background: #2a1e08; color: #d4943a; }
+  .p-meat { background: #0d2e1f; color: #4ecb8d; }
+  .p-veg { background: #173404; color: #97C459; }
+  .p-egg { background: #1e1a3a; color: #a89cf0; }
+  .p-coffee { background: #1e1208; color: #c47c3a; }
+  .p-no { background: #1a1a1a; color: #444; border: 1px solid #2a2a2a; text-decoration: line-through; }
+  .p-fruit { background: #331414; color: #ff6b6b; }
+  .gym-card { background: #0d2e1f; border: 1px solid #1a6645; border-radius: 12px; padding: 14px 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 14px; }
+  .gym-time { font-size: 12px; font-weight: 600; color: #4ecb8d; min-width: 56px; }
+  .gym-label { font-size: 13px; font-weight: 700; color: #4ecb8d; }
+  .cheat-box { border: 1px solid #2a2a2a; border-radius: 10px; padding: 12px 16px; margin-top: 12px; }
+  .cheat-title { font-size: 11px; font-weight: 700; color: #444; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+  .divider { height: 0.5px; background: #222; margin: 16px 0; }
+  .coffee-note { font-size: 12px; color: #555; background: #1a1208; border: 1px solid #2a1a08; border-radius: 8px; padding: 10px 14px; margin-top: 8px; line-height: 1.6; }
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  body { padding: 16px 12px 40px; font-size: 14px; }
+  h1 { font-size: 18px; }
+  .subtitle { font-size: 12px; margin-bottom: 16px; }
+  .section-toggle { gap: 4px; margin-bottom: 20px; }
+  .stab { padding: 8px 16px; font-size: 13px; }
+  .stats-bar { gap: 6px; flex-wrap: wrap; }
+  .stat { padding: 6px 10px; font-size: 11px; }
+  .schedule-bar { gap: 6px; }
+  .day-pill { padding: 4px 10px; font-size: 11px; }
+  .tabs { gap: 4px; margin-bottom: 12px; }
+  .tab { padding: 7px 12px; font-size: 12px; }
+  .row-head { grid-template-columns: 1fr 35px 45px 55px; gap: 4px; padding: 2px 8px; font-size: 10px; }
+  .row { grid-template-columns: 1fr 35px 45px 55px; gap: 4px; align-items: center; padding: 8px 8px; font-size: 12px; }
+  .machine-name { gap: 5px; }
+  .badge { font-size: 9px; padding: 1px 5px; }
+  .num { font-size: 11px; }
+  .cardio-row { padding: 5px 8px; font-size: 11px; }
+  .sec-label { margin: 10px 0 3px 2px; font-size: 9px; }
+  .note { font-size: 11px; margin-top: 12px; padding-top: 10px; }
+  .meal-card { padding: 12px 12px; margin-bottom: 6px; gap: 10px; }
+  .meal-time { min-width: 50px; font-size: 11px; }
+  .meal-label { font-size: 12px; margin-bottom: 5px; }
+  .pills { gap: 4px; flex-wrap: wrap; }
+  .pill { font-size: 11px; padding: 2px 8px; }
+  .gym-card { padding: 12px 12px; margin-bottom: 6px; gap: 10px; }
+  .gym-time { min-width: 50px; font-size: 11px; }
+  .gym-label { font-size: 12px; }
+  .cheat-box { padding: 10px 12px; margin-top: 10px; }
+  .cheat-title { font-size: 10px; margin-bottom: 6px; }
+  .divider { margin: 12px 0; }
+  .coffee-note { font-size: 11px; padding: 8px 12px; margin-top: 6px; }
+}
